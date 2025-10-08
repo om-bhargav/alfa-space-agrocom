@@ -4,6 +4,7 @@ import React, { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import toast from "react-hot-toast";
 import { validateAndSignin } from "@/actions/auth-actions";
+import SubmitButton from "@/components/submitButton";
 const AdminLogin = () => {
   const router = useRouter();
   return (
@@ -46,9 +47,7 @@ const AdminLogin = () => {
             />
           </div>
           <div className="grid w-full">
-            <button className="bg-[#9c2528] rounded hover:bg-[#7c2528] text-white text-lg py-1">
-              Login
-            </button>
+           <SubmitButton text="Login"/>
           </div>
         </form>
       </section>
