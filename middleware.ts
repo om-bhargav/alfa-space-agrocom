@@ -1,6 +1,6 @@
 // CRITICAL: Set the runtime to nodejs to avoid errors when importing
 // the auth configuration which relies on Mongoose/MongoDB.
-export const runtime = 'nodejs';
+//export const runtime = 'nodejs';
 
 import { NextRequest, NextResponse } from 'next/server';
 
