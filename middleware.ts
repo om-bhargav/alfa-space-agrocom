@@ -52,7 +52,6 @@ export default auth(async (req: AuthRequest) => { // 👈 AuthRequest resolves t
 
 // Configure the matcher to only run this middleware on relevant paths
 export const config = {
-    matcher: "/:path*",
     runtime: "nodejs",
     unstable_allowDynamic: [
         // allows a single file
@@ -61,6 +60,7 @@ export const config = {
         "/node_modules/mongoose/dist/**",
     ],
     matcher: [
+    "/:path*",
     '/admin/:path*',
     '/api/auth/:path*', // Ensure Auth.js handlers are covered
   ]
