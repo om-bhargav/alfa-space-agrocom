@@ -1,162 +1,187 @@
-🚀 Alfa Space Agrocom | Admin Platform
-The administrative hub for managing and featuring Rice, Pulses, Wheat, and Wheat Flour products, ensuring secure control over inventory and digital assets.
+# 🚀 Alfa Space Agrocom | Admin Platform
 
-🧑‍💻 Maintainer
-✨ Maintained by om-bhargav
+The **administrative hub** for managing and featuring **Rice, Pulses, Wheat, and Wheat Flour** products — ensuring secure control over inventory and digital assets.
 
-🧭 Table of Contents
-Alfa Space Agrocom?
+---
 
-Key Features
+## 🧑‍💻 Maintainer  
+✨ Maintained by [**om-bhargav**](https://github.com/om-bhargav)
 
-Technology Stack
+---
 
-Getting Started
+## 🧭 Table of Contents
+- [💡 Alfa Space Agrocom?](#-alfa-space-agrocom)
+- [✨ Key Features](#-key-features)
+- [🛠️ Technology Stack](#️-technology-stack)
+- [📦 Getting Started](#-getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Environment Variables](#environment-variables)
+- [➡️ Usage & Routes](#️-usage--routes)
+- [🤝 Contributing](#-contributing)
+- [📜 License](#-license)
+- [🧑‍💻 Author](#-author)
 
-Prerequisites
+---
 
-Installation
+## 💡 Alfa Space Agrocom?
 
-Environment Variables
+This project provides a **zero-compromise admin backend** built on the **Next.js App Router** for managing your core product catalog. It ensures **security** and delivers a **lightning-fast experience** by:
 
-Usage & Routes
+- **Elevate Operational Security:** Leveraging Role-Based Access Control (RBAC) via middleware, ensuring only authorized users access sensitive data endpoints.  
+- **Streamline Content Workflow:** Direct integration with Cloudinary simplifies product image uploads and asset management for your inventory.  
+- **Future-Proof Development:** Built using best-in-class TypeScript patterns, making the codebase scalable, maintainable, and easy to extend.  
+- **Used For Any Product-Based Website:** With little effort, the user can adapt it for any other product platform.
 
-Author
+---
 
-Contributing
+## ✨ Key Features
 
-License
+This project leverages modern **Next.js** and **Auth.js** patterns to provide a robust and secure foundation for administrative operations:
 
-💡 Alfa Space Agrocom?
-This project provides a zero-compromise admin backend built on the Next.js App Router for managing your core product catalog. It ensures security and delivers a lightning-fast experience by:
+- 🔒 **Ironclad Authentication:** Implemented with **NextAuth.js (v5)** Credentials Provider and **bcryptjs** hashing for password security.  
+- 🖼️ **Integrated Image Hosting:** Seamless, scalable image management powered by **Cloudinary**.  
+- 🛡️ **Granular Access Control (RBAC):** Dynamic route and data restrictions based on user roles.  
+- 🚀 **Zero-Trust Architecture:** Uses **Next.js Server Actions** for all backend logic, minimizing client-side exposure.  
+- 🧩 **Mongoose ODM:** Reliable CRUD operations and structured data modeling with **MongoDB**.  
+- 🎨 **Responsive UI:** Built with **Tailwind CSS** for an adaptive and accessible design.
 
-Elevate Operational Security: Leveraging Role-Based Access Control (RBAC) via middleware, ensuring only authorized users access sensitive data endpoints.
+---
 
-Streamline Content Workflow: Direct integration with Cloudinary simplifies product image uploads and asset management for your inventory.
+## 🛠️ Technology Stack
 
-Future-Proof Development: Built using best-in-class TypeScript patterns, making the codebase scalable, maintainable, and easy to extend.
-
-Used For Any Type Of Products Featuring Website: With little effort user can change it according to him can use for his own project.
-
-✨ Key Features
-This project leverages modern Next.js and Auth.js patterns to provide a robust and secure foundation for administrative operations:
-
-🔒 Ironclad Authentication: Implemented with NextAuth.js (v5) Credentials Provider and military-grade password protection using secure bcryptjs hashing, ensuring maximum login security.
-
-🖼️ Integrated Image Hosting: Seamless, scalable file uploads and management powered by a Cloudinary integration, optimized for product listings.
-
-🛡️ Granular Access Control (RBAC): Custom Middleware dynamically restricts access to routes and data based on the user's assigned role (admin, user).
-
-🚀 Zero-Trust Architecture: Utilizes Next.js Server Actions for all critical database and business logic, minimizing client-side code exposure and enhancing performance.
-
-🧩 Mongoose ODM: Structured and efficient data modeling using MongoDB, providing reliable CRUD operations for product catalogs and customer queries.
-
-🎨 Responsive UI: Built with Tailwind CSS for an adaptive, accessible, and modern user interface that looks great on any device.
-
-🛠️ Technology Stack
 | Category | Technology | Purpose |
-| Framework | Next.js (App Router) | Full-stack React framework. |
-| Styling | Tailwind CSS | Utility-first CSS framework. |
-| Authentication | Auth.js (NextAuth v5) | Secure, modern authentication layer. |
-| Database | Mongoose | MongoDB Object Data Modeling (ODM). |
-| Media Hosting | Cloudinary | Cloud-based image and video management. |
-| Security | bcryptjs | Password hashing and verification. |
+|-----------|-------------|----------|
+| **Framework** | Next.js (App Router) | Full-stack React framework |
+| **Styling** | Tailwind CSS | Utility-first CSS framework |
+| **Authentication** | Auth.js (NextAuth v5) | Secure, modern authentication layer |
+| **Database** | Mongoose | MongoDB Object Data Modeling (ODM) |
+| **Media Hosting** | Cloudinary | Cloud-based image and video management |
+| **Security** | bcryptjs | Password hashing and verification |
 
-📦 Getting Started
+---
+
+## 📦 Getting Started
+
 Follow these steps to set up and run the project locally.
 
-Prerequisites
-Ensure you have the following installed:
+### Prerequisites
+Make sure you have the following installed:
+- Node.js (v18 or higher)
+- npm or Yarn
+- A running MongoDB instance (local or Atlas)
 
-Node.js (v18 or higher)
+---
 
-npm or Yarn
+### Installation
 
-A running MongoDB instance (local or Atlas cluster)
-
-Installation
 Clone the repository:
 
-git clone [https://github.com/om-bhargav/alfa-space-agrocom.git](https://github.com/om-bhargav/alfa-space-agrocom.git)
+\`\`\`bash
+git clone https://github.com/om-bhargav/alfa-space-agrocom.git
 cd alfa-space-agrocom
-
-
-
+\`\`\`
 
 Install dependencies:
 
+\`\`\`bash
 npm install
 # or
 yarn install
-
-
-
+\`\`\`
 
 Run the development server:
 
+\`\`\`bash
 npm run dev
 # or
 yarn dev
+\`\`\`
 
+Visit the app at [http://localhost:3000](http://localhost:3000).
 
+---
 
+### Environment Variables
 
-The application will be available at http://localhost:3000.
-
-Environment Variables
-Before running, create a file named .env.local in the root directory and add the following variables.
+Create a \`.env.local\` file in the root directory and add:
 
 | Variable | Description | Example Value |
-| MONGODB_URI | Connection string for your MongoDB Atlas cluster. | mongodb+srv://<username>:<password>@cluster0.xxxxx.mongodb.net/dbname |
-| AUTH_SECRET | Required for Auth.js session encryption. Must be a complex, long, random string. | your_long_random_and_secret_key_here |
-| NEXTAUTH_SECRET | Alias for AUTH_SECRET. Recommended to set both. | (Same as AUTH_SECRET) |
-| CLOUDINARY_CLOUD_NAME | Your Cloudinary cloud name. | your_cloud_name |
-| CLOUDINARY_API_KEY | Your Cloudinary API Key. | 123456789012345 |
-| CLOUDINARY_API_SECRET | Your Cloudinary API Secret. | A_secret_key_from_cloudinary_portal |
-| CLOUDINARY_UPLOAD_PRESET | The unsigned upload preset for client-side uploads. | my_upload_preset |
-| TYPE | Used to define the environment type. | production |
+|-----------|-------------|----------------|
+| \`MONGODB_URI\` | MongoDB connection string | \`mongodb+srv://<username>:<password>@cluster0.xxxxx.mongodb.net/dbname\` |
+| \`AUTH_SECRET\` | Session encryption key for Auth.js | \`your_long_random_secret_key\` |
+| \`NEXTAUTH_SECRET\` | Alias for AUTH_SECRET | \`same_as_auth_secret\` |
+| \`CLOUDINARY_CLOUD_NAME\` | Your Cloudinary name | \`your_cloud_name\` |
+| \`CLOUDINARY_API_KEY\` | Cloudinary API key | \`123456789012345\` |
+| \`CLOUDINARY_API_SECRET\` | Cloudinary API secret | \`a_secret_key_here\` |
+| \`CLOUDINARY_UPLOAD_PRESET\` | Upload preset for client uploads | \`my_upload_preset\` |
+| \`TYPE\` | Environment type | \`production\` |
 
-➡️ Usage & Routes
-Initial Credentials (For Testing)
-⚠️ SECURITY WARNING: These are development/testing credentials.
+---
+
+## ➡️ Usage & Routes
+
+### Initial Credentials (for Testing)
+⚠️ **Security Warning:** These credentials are for development only.
 
 | Role | Email | Password |
+|------|--------|-----------|
 | Admin | testmail2@testing.com | 123445678 |
 
-Key Application Routes
+---
+
+### Key Application Routes
+
 | Route | Description | Access Type |
-| / | Application landing page. | Public |
-| /about/ | General information about the project or company. | Public |
-| /contact/ | Contact information and customer inquiry form. | Public |
-| /admin/ | Admin Login Page for credential authentication. | Public |
-| /admin/u/dashboard/ | Main hub and overview for authenticated users. | Authenticated |
-| /admin/u/products/ | View and manage the list of all products (Rice, Pulses, Wheat, Flour). | Authenticated |
-| /admin/u/products/addproduct/ | Dedicated form for adding a new product listing. | Authenticated |
-| /admin/u/products/editproduct/[id]/ | Edit details of a specific product via ID. | Authenticated |
-| /admin/u/listqueries/ | View and manage incoming customer queries/inquiries. | Authenticated |
-| /admin/u/listqueries/[id]/ | Detailed view and response handling for a specific query. | Authenticated |
-| /admin/u/settings/ | User profile or system configuration settings. | Authenticated |
-| /api/auth/signout | Auth.js endpoint for session termination. | Authenticated |
+|--------|-------------|--------------|
+| \`/\` | Landing page | Public |
+| \`/about/\` | About project/company | Public |
+| \`/contact/\` | Customer inquiry form | Public |
+| \`/admin/\` | Admin Login | Public |
+| \`/admin/u/dashboard/\` | Admin dashboard | Authenticated |
+| \`/admin/u/products/\` | Manage all products | Authenticated |
+| \`/admin/u/products/addproduct/\` | Add a new product | Authenticated |
+| \`/admin/u/products/editproduct/[id]/\` | Edit product details | Authenticated |
+| \`/admin/u/listqueries/\` | Manage customer queries | Authenticated |
+| \`/admin/u/listqueries/[id]/\` | View a specific query | Authenticated |
+| \`/admin/u/settings/\` | User or system settings | Authenticated |
+| \`/api/auth/signout\` | Session termination endpoint | Authenticated |
 
-🤝 Contributing
-We welcome contributions! Please feel free to open an issue or submit a pull request if you find a bug or have an improvement suggestion.
+---
 
-Fork the repository.
+## 🤝 Contributing
 
-Create your feature branch (git checkout -b feature/AmazingFeature).
+Contributions are always welcome!  
+If you find a bug or have an idea, feel free to open an issue or submit a pull request.
 
-Commit your changes (git commit -m 'Add some AmazingFeature').
+### Contribution Steps
 
-Push to the branch (git push origin feature/AmazingFeature).
+1. Fork the repository  
+2. Create a feature branch:  
+   \`\`\`bash
+   git checkout -b feature/AmazingFeature
+   \`\`\`
+3. Commit your changes:  
+   \`\`\`bash
+   git commit -m "Add some AmazingFeature"
+   \`\`\`
+4. Push the branch:  
+   \`\`\`bash
+   git push origin feature/AmazingFeature
+   \`\`\`
+5. Open a Pull Request  
 
-Open a Pull Request.
+---
 
-📜 License
-Distributed under the MIT License. See LICENSE for more information.
+## 📜 License
 
-🧑‍💻 Author
-Om Bhargav
+Distributed under the **MIT License**.  
+See the [LICENSE](./LICENSE) file for details.
 
-GitHub: https://github.com/om-bhargav
+---
 
-LinkedIn: https://www.linkedin.com/in/om-bhargav-6a4495297/
+## 🧑‍💻 Author
+
+**Om Bhargav**  
+- GitHub: [om-bhargav](https://github.com/om-bhargav)  
+- LinkedIn: [om-bhargav-6a4495297](https://www.linkedin.com/in/om-bhargav-6a4495297/)
