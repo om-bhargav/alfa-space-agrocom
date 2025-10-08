@@ -6,7 +6,8 @@ The **administrative hub** for managing and featuring **Rice, Pulses, Wheat, and
 
 ## 🧑‍💻 Maintainer  
 ✨ Maintained by [**om-bhargav**](https://github.com/om-bhargav)
-🚀 Live Link: (https://alfa-space-agrocom-6pnl.vercel.app/)
+
+🚀 Live Link: https://alfa-space-agrocom-6pnl.vercel.app/
 
 ---
 
