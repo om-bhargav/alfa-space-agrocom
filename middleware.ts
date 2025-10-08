@@ -52,10 +52,16 @@ export default auth(async (req: AuthRequest) => { // 👈 AuthRequest resolves t
 
 // Configure the matcher to only run this middleware on relevant paths
 export const config = {
-  // This matcher ensures the middleware only runs on routes starting with /admin
-  // and the internal Auth.js API routes, maximizing performance on other pages.
-  matcher: [
+    matcher: "/:path*",
+    runtime: "nodejs",
+    unstable_allowDynamic: [
+        // allows a single file
+        "/lib/db",
+        // use a glob to allow anything in the function-bind 3rd party module
+        "/node_modules/mongoose/dist/**",
+    ],
+    matcher: [
     '/admin/:path*',
     '/api/auth/:path*', // Ensure Auth.js handlers are covered
-  ],
+  ]
 };
